@@ -12,5 +12,4 @@ UNICODE_ENABLE   = no
 SWAP_HANDS_ENABLE = no
 RGB_MATRIX_ENABLE = no
 
-SRC += source.c tapdances.c
-
+SRC += source.c
