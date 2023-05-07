@@ -1,0 +1,14 @@
+{
+	"keymap": "princessmud",
+    "keyboard": "ergodox_ez/base",
+	"layout": "LAYOUT_36key_w",
+	"layers": [
+		[ "_BSE" ],
+		[ "_NAV" ],
+		[ "_AUX" ],
+		[ "_MOD" ],
+		[ "_NUM" ],
+		[ "_SYM" ],
+		[ "_FUN" ]
+	]
+}
