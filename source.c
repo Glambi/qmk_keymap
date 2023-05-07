@@ -1,3 +1,15 @@
+#include QMK_KEYBOARD_H
+#include "quantum/keycodes.h"
+#include "layout.h"
+#include "layers.h"
+#include "enums.h"
+
+// function to determine the current tapdance state
+int cur_dance (tap_dance_state_t *state);
+
+// `finished` and `reset` functions for each tapdance keycode
+void shftosm_finished (tap_dance_state_t *state, void *user_data);
+void shftosm_reset (tap_dance_state_t *state, void *user_data);
 // create a global instance of the tapdance state type
 static td_state_t td_state;
 
