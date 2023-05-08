@@ -12,3 +12,10 @@ typedef enum {
   TRIPLE_TAP = 5,
   TRIPLE_HOLD = 6
 } td_state_t;
+
+typedef enum {
+  OS_MAC, // Don't assign values
+  OS_WIN,
+  OS_NIX,
+  _OS_COUNT,
+} OS;

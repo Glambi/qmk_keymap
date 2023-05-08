@@ -43,27 +43,27 @@ enum layer_names {
     _______, _______, KC_UP  , _______, _______, KC_BRID, KC_VOLD, KC_MUTE, KC_VOLU, KC_BRIU, \
     _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_MPRV, KC_MRWD, KC_MFFD, KC_MNXT, \
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-                      _______, _______, _______, _______, KC_MPLY, KC_MSTP
+                      KC_BSPC, _______, _______, _______, KC_MPLY, KC_MSTP
 #define _NAV \
     KC_QUOT, KC_Y   , KC_U   , KC_L   , KC_J   , KC_AGIN, KC_PSTE, KC_COPY, KC_CUT , KC_UNDO, \
     KC_O   , KC_I   , KC_E   , KC_N   , KC_M   , KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, KC_CAPS, \
     KC_SLSH, KC_DOT , KC_COMM, KC_H   , KC_K   , KC_HOME, KC_PGDN, KC_PGUP, KC_END , KC_INS , \
-                      _______, _______, _______, _______, KC_BSPC, KC_DEL
+                      _______, KC_SPC , _______, _______, KC_BSPC, KC_DEL
 #define _MOD \
-    QK_RBT , KC_APP , OS_NUM , OS_SYM , OS_FUN , OS_FUN , _______, _______, _______, _______, \
-    KC_ESC , OS_LGUI, OS_LALT, OS_LCTL, KC_ENT , _______, OS_LCTL, OS_LALT, OS_LGUI, _______, \
-    OS_LSFT, OS_RGUI, OS_RALT, OS_RCTL, _______, _______, _______, _______, _______, OS_LSFT, \
+    KC_ESC , KC_APP , OS_NUM , OS_SYM , OS_FUN , OS_FUN , _______, _______, _______, _______, \
+    OS_LSFT, OS_LGUI, OS_LALT, OS_LCTL, KC_ENT , _______, OS_LCTL, OS_LALT, OS_LGUI, OS_LSFT, \
+    OS_RSFT, OS_RGUI, OS_RALT, OS_RCTL, _______, _______, OS_RCTL, OS_RALT, OS_RGUI, OS_RSFT, \
                       QK_LEAD, KC_TAB , _______, _______, QK_RBT , QK_LEAD
 #define _NUM \
     KC_LBRC, KC_7   , KC_8   , KC_9   , KC_RBRC, _______, _______, _______, _______, _______, \
     KC_SCLN, KC_4   , KC_5   , KC_6   , KC_EQL , KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, _______, \
     KC_GRV , KC_1   , KC_2   , KC_3   , KC_BSLS, _______, _______, _______, _______, _______, \
-                      KC_MINS, KC_0   , _______, _______, _______, _______
+                      KC_MINS, KC_0   , _______, _______, KC_ESC , _______
 #define _SYM \
     KC_LCBR, KC_AMPR, KC_ASTR, KC_UNDS, KC_RCBR, _______, _______, _______, _______, _______, \
     KC_COLN, KC_DLR , KC_PERC, KC_CIRC, KC_PLUS, _______, _______, _______, _______, _______, \
     KC_TILD, KC_EXLM, KC_AT  , KC_HASH, KC_PIPE, _______, _______, _______, _______, _______, \
-                      KC_LPRN, KC_RPRN, _______, _______, _______, _______
+                      KC_LPRN, KC_RPRN, _______, _______, _______, KC_TAB
 #define _FUN \
     KC_F12 , KC_F7  , KC_F8  , KC_F9  , KC_PSCR, PB_1   , KC_F19 , KC_F20 , KC_F21 , KC_F24 , \
     KC_F11 , KC_F4  , KC_F5  , KC_F6  , KC_SCRL, PB_2   , KC_F16 , KC_F17 , KC_F18 , KC_F23 , \

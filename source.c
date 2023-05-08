@@ -64,7 +64,6 @@ tap_dance_action_t tap_dance_actions[] = {
 };
 
 bool process_record_keymap(uint16_t keycode, keyrecord_t *record) {
-
   switch (keycode) {
     case KC_TRNS:
     case KC_NO:
@@ -83,4 +82,19 @@ bool process_record_keymap(uint16_t keycode, keyrecord_t *record) {
       return true;
   }
   return true;
+}
+
+void leader_end_user(void) {
+  if (leader_sequence_one_key(KC_Q)) {
+    send_unicode_string("æ");
+  }
+  if (leader_sequence_one_key(KC_A)) {
+    send_unicode_string("ø");
+  }
+  if (leader_sequence_one_key(KC_Z)) {
+    send_unicode_string("å");
+  }
+  if (leader_sequence_five_keys(KC_S, KC_H, KC_R, KC_U, KC_G)) {
+    send_unicode_string("¯\\_(ツ)_/¯");
+  }
 }
