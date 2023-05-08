@@ -4,9 +4,11 @@ enum td_keycodes {
   SHFT_OSM // `LSFT` when held, one shot to mod layer when tapped.
 };
 
-// define a type containing as many tapdance states as you need
 typedef enum {
-  SINGLE_TAP,
-  SINGLE_HOLD,
-  DOUBLE_SINGLE_TAP
+  SINGLE_TAP = 1,
+  SINGLE_HOLD = 2,
+  DOUBLE_TAP = 3,
+  DOUBLE_HOLD = 4,
+  TRIPLE_TAP = 5,
+  TRIPLE_HOLD = 6
 } td_state_t;
