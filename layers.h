@@ -48,16 +48,16 @@ enum layer_names {
     KC_QUOT, KC_Y   , KC_U   , KC_L   , KC_J   , KC_AGIN, KC_PSTE, KC_COPY, KC_CUT , KC_UNDO, \
     KC_O   , KC_I   , KC_E   , KC_N   , KC_M   , KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, KC_CAPS, \
     KC_SLSH, KC_DOT , KC_COMM, KC_H   , KC_K   , KC_HOME, KC_PGDN, KC_PGUP, KC_END , KC_INS , \
-                      _______, KC_SPC , _______, _______, KC_BSPC, KC_DEL
+                      _______, KC_SPC , _______, _______, KC_ESC , KC_TAB
 #define _MOD \
-    KC_ESC , KC_APP , OS_NUM , OS_SYM , OS_FUN , OS_FUN , _______, _______, _______, _______, \
+    KC_ESC , KC_APP , OS_NUM , OS_SYM , OS_FUN , OS_FUN , _______, _______, _______, QK_RBT , \
     OS_LSFT, OS_LGUI, OS_LALT, OS_LCTL, KC_ENT , _______, OS_LCTL, OS_LALT, OS_LGUI, OS_LSFT, \
-    OS_RSFT, OS_RGUI, OS_RALT, OS_RCTL, _______, _______, OS_RCTL, OS_RALT, OS_RGUI, OS_RSFT, \
-                      QK_LEAD, KC_TAB , _______, _______, QK_RBT , QK_LEAD
+    OS_RSFT, OS_RGUI, OS_RALT, OS_RCTL, QK_LEAD, QK_LEAD, OS_RCTL, OS_RALT, OS_RGUI, OS_RSFT, \
+                      _______, _______, _______, _______, _______, _______
 #define _NUM \
     KC_LBRC, KC_7   , KC_8   , KC_9   , KC_RBRC, _______, _______, _______, _______, _______, \
     KC_SCLN, KC_4   , KC_5   , KC_6   , KC_EQL , KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, _______, \
-    KC_GRV , KC_1   , KC_2   , KC_3   , KC_BSLS, _______, _______, _______, _______, _______, \
+    KC_GRV , KC_1   , KC_2   , KC_3   , KC_BSLS, KC_HOME, KC_PGDN, KC_PGUP, KC_END , _______, \
                       KC_MINS, KC_0   , _______, _______, KC_ESC , _______
 #define _SYM \
     KC_LCBR, KC_AMPR, KC_ASTR, KC_UNDS, KC_RCBR, _______, _______, _______, _______, _______, \

@@ -85,16 +85,23 @@ bool process_record_keymap(uint16_t keycode, keyrecord_t *record) {
 }
 
 void leader_end_user(void) {
+  if (leader_sequence_one_key(QK_LEAD)) {
+    leader_end();
+  }
   if (leader_sequence_one_key(KC_Q)) {
     send_unicode_string("æ");
+    leader_end();
   }
   if (leader_sequence_one_key(KC_A)) {
     send_unicode_string("ø");
+    leader_end();
   }
   if (leader_sequence_one_key(KC_Z)) {
     send_unicode_string("å");
+    leader_end();
   }
   if (leader_sequence_five_keys(KC_S, KC_H, KC_R, KC_U, KC_G)) {
     send_unicode_string("¯\\_(ツ)_/¯");
+    leader_end();
   }
 }
