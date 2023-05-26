@@ -22,13 +22,13 @@ enum custom_keycodes {
 #define LT_NAV LT(NAV, KC_SPC)
 #define LT_NUM LT(NUM, KC_ESC)
 #define LT_SYM LT(SYM, KC_TAB)
-#define OS_MOD OSL(MOD)
+#define MO_MOD MO(MOD)
 
 #define _BSE \
     KC_Q   , KC_W   , KC_F   , KC_P   , KC_B   , KC_J   , KC_L   , KC_U   , KC_Y   , KC_QUOT, \
     KC_A   , KC_R   , KC_S   , KC_T   , KC_G   , KC_M   , KC_N   , KC_E   , KC_I   , KC_O,    \
     KC_Z   , KC_X   , KC_C   , KC_D   , KC_V   , KC_K   , KC_H   , KC_COMM, KC_DOT , KC_SLSH, \
-                      LT_AUX , LT_NAV , OS_MOD , OS_MOD , LT_NUM , LT_SYM
+                      LT_AUX , LT_NAV , MO_MOD , MO_MOD , LT_NUM , LT_SYM
 #define _AUX \
     _______, _______, KC_UP  , _______, _______, KC_BRID, KC_VOLD, KC_MUTE, KC_VOLU, KC_BRIU, \
     _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_MPRV, KC_MRWD, KC_MFFD, KC_MNXT, \
