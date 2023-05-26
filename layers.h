@@ -10,19 +10,26 @@ enum layer_names {
     FUN
 };
 
+enum custom_keycodes {
+  OS_NUM = 0x7E40, // SAFE_RANGE
+  OS_SYM,
+  OS_FUN,
+};
+
 #define XXX KC_NO
 
-#define OS_SYM OSL(SYM)
-#define OS_NAV OSL(NAV)
-#define OS_AUX OSL(AUX)
-#define OS_MOD OSL(MOD)
-#define OS_NUM OSL(NUM)
-#define OS_FUN OSL(FUN)
+//#define OS_SYM OSL(SYM)
+//#define OS_NAV OSL(NAV)
+//#define OS_AUX OSL(AUX)
+//#define OS_MOD OSL(MOD)
+//#define OS_NUM OSL(NUM)
+//#define OS_FUN OSL(FUN)
 
 #define LT_AUX LT(AUX, KC_BSPC)
 #define LT_NAV LT(NAV, KC_SPC)
 #define LT_NUM LT(NUM, KC_ESC)
 #define LT_SYM LT(SYM, KC_TAB)
+#define MO_MOD MO(MOD)
 
 #define OS_LCTL OSM(MOD_LCTL)
 #define OS_LSFT OSM(MOD_LSFT)
@@ -32,13 +39,14 @@ enum layer_names {
 #define OS_RSFT OSM(MOD_RSFT)
 #define OS_RALT OSM(MOD_RALT)
 #define OS_RGUI OSM(MOD_RGUI)
+
 #define TD_SHFT TD(SHFT_OSM)
 
 #define _BSE \
     KC_Q   , KC_W   , KC_F   , KC_P   , KC_B   , KC_J   , KC_L   , KC_U   , KC_Y   , KC_QUOT, \
     KC_A   , KC_R   , KC_S   , KC_T   , KC_G   , KC_M   , KC_N   , KC_E   , KC_I   , KC_O,    \
     KC_Z   , KC_X   , KC_C   , KC_D   , KC_V   , KC_K   , KC_H   , KC_COMM, KC_DOT , KC_SLSH, \
-                      LT_AUX , LT_NAV , TD_SHFT, TD_SHFT, LT_NUM , LT_SYM
+                      LT_AUX , LT_NAV , MO_MOD , MO_MOD , LT_NUM , LT_SYM
 #define _AUX \
     _______, _______, KC_UP  , _______, _______, KC_BRID, KC_VOLD, KC_MUTE, KC_VOLU, KC_BRIU, \
     _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_MPRV, KC_MRWD, KC_MFFD, KC_MNXT, \
@@ -51,8 +59,8 @@ enum layer_names {
                       _______, KC_SPC , _______, _______, KC_ESC , KC_TAB
 #define _MOD \
     KC_ESC , KC_APP , OS_NUM , OS_SYM , OS_FUN , OS_FUN , _______, _______, _______, QK_RBT , \
-    OS_LSFT, OS_LGUI, OS_LALT, OS_LCTL, KC_ENT , _______, OS_LCTL, OS_LALT, OS_LGUI, OS_LSFT, \
-    OS_RSFT, OS_RGUI, OS_RALT, OS_RCTL, QK_LEAD, QK_LEAD, OS_RCTL, OS_RALT, OS_RGUI, OS_RSFT, \
+    KC_LSFT, KC_LGUI, KC_LALT, KC_LCTL, KC_ENT , _______, KC_LCTL, KC_LALT, KC_LGUI, KC_LSFT, \
+    CW_TOGG, KC_RGUI, KC_RALT, KC_RCTL, QK_LEAD, QK_LEAD, KC_RCTL, KC_RALT, KC_RGUI, CW_TOGG, \
                       _______, _______, _______, _______, _______, _______
 #define _NUM \
     KC_LBRC, KC_7   , KC_8   , KC_9   , KC_RBRC, _______, _______, _______, _______, _______, \
