@@ -8,12 +8,12 @@
 // * layer keycode
 // * modifier keycode
 const uint16_t flow_config[FLOW_COUNT][2] = {
-    {MO_MOD, KC_LALT},
-    {MO_MOD, KC_LGUI},
-    {MO_MOD, KC_LCTL},
-    {MO_MOD, KC_RCTL},
-    {MO_MOD, KC_RGUI},
-    {MO_MOD, KC_LSFT},
+    {OS_MOD, KC_LALT},
+    {OS_MOD, KC_LGUI},
+    {OS_MOD, KC_LCTL},
+    {OS_MOD, KC_RCTL},
+    {OS_MOD, KC_RGUI},
+    {OS_MOD, KC_LSFT},
 };
 
 const uint16_t flow_layers_config[FLOW_LAYERS_COUNT][2] = {
