@@ -9,13 +9,13 @@
 // * layer keycode
 // * modifier keycode
 const uint16_t flow_config[FLOW_COUNT][2] = {
-    {MO_MOD, KC_LALT},
-    {MO_MOD, KC_LGUI},
-    {MO_MOD, KC_LCTL},
-    {MO_MOD, KC_RALT},
-    {MO_MOD, KC_RCTL},
-    {MO_MOD, KC_RGUI},
-    {MO_MOD, KC_LSFT},
+    {OS_MOD, KC_LALT},
+    {OS_MOD, KC_LGUI},
+    {OS_MOD, KC_LCTL},
+    {OS_MOD, KC_RALT},
+    {OS_MOD, KC_RCTL},
+    {OS_MOD, KC_RGUI},
+    {OS_MOD, KC_LSFT},
 };
 
 const uint16_t flow_layers_config[FLOW_LAYERS_COUNT][2] = {
@@ -23,6 +23,7 @@ const uint16_t flow_layers_config[FLOW_LAYERS_COUNT][2] = {
     {OS_SYM, SYM},
     {OS_FUN, FUN},
     {OS_NAV, NAV},
+    {OS_MOD, MOD},
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -36,23 +37,8 @@ void matrix_scan_user(void) {
 }
 
 void leader_end_user(void) {
-  if (leader_sequence_one_key(QK_LEAD)) {
-    leader_end();
-  }
-  if (leader_sequence_one_key(KC_Q)) {
-    send_unicode_string("æ");
-    leader_end();
-  }
-  if (leader_sequence_one_key(KC_A)) {
-    send_unicode_string("ø");
-    leader_end();
-  }
-  if (leader_sequence_one_key(KC_Z)) {
-    send_unicode_string("å");
-    leader_end();
-  }
   if (leader_sequence_five_keys(KC_S, KC_H, KC_R, KC_U, KC_G)) {
-    send_unicode_string("¯\\_(ツ)_/¯");
+    send_string("¯\\_('<')_/¯");
     leader_end();
   }
 }
