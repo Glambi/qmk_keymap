@@ -32,7 +32,7 @@ enum custom_keycodes {
                       LT_AUX , LT_NAV , MO_MOD , MO_MOD , LT_NUM , LT_SYM
 #define _AUX \
     _______, _______, KC_UP  , _______, _______, KC_BRID, KC_VOLD, KC_MUTE, KC_VOLU, KC_BRIU, \
-    _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_MPRV, KC_MRWD, KC_MFFD, KC_MNXT, \
+    _______, KC_LEFT, KC_DOWN, KC_RGHT, QK_LEAD, QK_LEAD, KC_MPRV, KC_MRWD, KC_MFFD, KC_MNXT, \
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
                       KC_BSPC, _______, _______, _______, KC_MPLY, KC_MSTP
 #define _NAV \
@@ -41,10 +41,10 @@ enum custom_keycodes {
     KC_SLSH, KC_DOT , KC_COMM, KC_H   , KC_K   , KC_HOME, KC_PGDN, KC_PGUP, KC_END , KC_INS , \
                       _______, KC_SPC , _______, _______, KC_ESC , KC_TAB
 #define _MOD \
-    KC_ESC , KC_APP , OS_NUM , OS_SYM , OS_FUN , OS_FUN , _______, _______, _______, QK_RBT , \
+    KC_ESC , OS_NUM , OS_SYM , OS_FUN , OS_NAV , _______, OS_FUN , _______, _______, QK_RBT , \
     KC_LSFT, KC_LGUI, KC_LALT, KC_LCTL, KC_ENT , KC_DEL , KC_LCTL, KC_LALT, KC_LGUI, KC_LSFT, \
-    CW_TOGG, KC_RGUI, KC_RALT, KC_RCTL, QK_LEAD, QK_LEAD, KC_RCTL, KC_RALT, KC_RGUI, CW_TOGG, \
-                      _______, _______, OS_NAV , _______, _______, _______
+    CW_TOGG, KC_RGUI, KC_RALT, KC_RCTL, KC_APP , _______, KC_RCTL, KC_RALT, KC_RGUI, CW_TOGG, \
+                      _______, _______, _______, _______, _______, _______
 #define _NUM \
     KC_LBRC, KC_7   , KC_8   , KC_9   , KC_RBRC, _______, _______, _______, _______, _______, \
     KC_SCLN, KC_4   , KC_5   , KC_6   , KC_EQL , KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, _______, \
