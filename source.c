@@ -3,6 +3,7 @@
 #include "layout.h"
 #include "layers.h"
 #include "flow.h"
+#include "layer_lock.h"
 
 // flow_config should correspond to following format:
 // * layer keycode
@@ -25,6 +26,7 @@ const uint16_t flow_layers_config[FLOW_LAYERS_COUNT][2] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    if (!process_layer_lock(keycode, record, L_LOCK)) { return false; }
     if (!update_flow(keycode, record->event.pressed, record->event.key)) return false;
     return true;
 }

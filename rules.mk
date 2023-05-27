@@ -14,4 +14,5 @@ SWAP_HANDS_ENABLE = no
 RGB_MATRIX_ENABLE = no
 
 SRC += flow.c
+SRC += layer_lock.c
 SRC += source.c
