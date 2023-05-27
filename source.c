@@ -11,6 +11,7 @@ const uint16_t flow_config[FLOW_COUNT][2] = {
     {MO_MOD, KC_LALT},
     {MO_MOD, KC_LGUI},
     {MO_MOD, KC_LCTL},
+    {MO_MOD, KC_RALT},
     {MO_MOD, KC_RCTL},
     {MO_MOD, KC_RGUI},
     {MO_MOD, KC_LSFT},
@@ -20,6 +21,7 @@ const uint16_t flow_layers_config[FLOW_LAYERS_COUNT][2] = {
     {OS_NUM, NUM},
     {OS_SYM, SYM},
     {OS_FUN, FUN},
+    {OS_NAV, NAV},
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {

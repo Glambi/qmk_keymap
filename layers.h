@@ -14,6 +14,7 @@ enum custom_keycodes {
   OS_NUM = 0x7E40, // SAFE_RANGE
   OS_SYM,
   OS_FUN,
+  OS_NAV
 };
 
 #define XXX KC_NO
@@ -43,7 +44,7 @@ enum custom_keycodes {
     KC_ESC , KC_APP , OS_NUM , OS_SYM , OS_FUN , OS_FUN , _______, _______, _______, QK_RBT , \
     KC_LSFT, KC_LGUI, KC_LALT, KC_LCTL, KC_ENT , KC_DEL , KC_LCTL, KC_LALT, KC_LGUI, KC_LSFT, \
     CW_TOGG, KC_RGUI, KC_RALT, KC_RCTL, QK_LEAD, QK_LEAD, KC_RCTL, KC_RALT, KC_RGUI, CW_TOGG, \
-                      _______, _______, _______, _______, _______, _______
+                      _______, _______, OS_NAV , _______, _______, _______
 #define _NUM \
     KC_LBRC, KC_7   , KC_8   , KC_9   , KC_RBRC, _______, _______, _______, _______, _______, \
     KC_SCLN, KC_4   , KC_5   , KC_6   , KC_EQL , KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, _______, \

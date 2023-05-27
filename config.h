@@ -7,8 +7,8 @@
 
 #define FLOW_ONESHOT_TERM 10000
 #define FLOW_ONESHOT_WAIT_TERM 10000
-#define FLOW_COUNT 7
-#define FLOW_LAYERS_COUNT 3
+#define FLOW_COUNT 8
+#define FLOW_LAYERS_COUNT 4
 
 // Layout macros
 #ifndef __ASSEMBLER__

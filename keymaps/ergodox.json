@@ -4,8 +4,8 @@
 	"layout": "LAYOUT_36key_w",
 	"layers": [
 		[ "_BSE" ],
-		[ "_NAV" ],
 		[ "_AUX" ],
+		[ "_NAV" ],
 		[ "_MOD" ],
 		[ "_NUM" ],
 		[ "_SYM" ],
