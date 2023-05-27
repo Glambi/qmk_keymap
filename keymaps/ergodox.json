@@ -2,6 +2,7 @@
 	"keymap": "Glambi",
     "keyboard": "ergodox_ez/base",
 	"layout": "LAYOUT_36key_w",
+    "debounce": 45,
 	"layers": [
 		[ "_BSE" ],
 		[ "_AUX" ],

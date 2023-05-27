@@ -37,8 +37,16 @@ void matrix_scan_user(void) {
 }
 
 void leader_end_user(void) {
-  if (leader_sequence_five_keys(KC_S, KC_H, KC_R, KC_U, KC_G)) {
-    send_string("¯\\_('<')_/¯");
+    // RESET = restart the keyboard
+  if (leader_sequence_five_keys(KC_R, KC_E, KC_S, KC_E, KC_T)) {
+    soft_reset_keyboard();
+    // FLASH = restart into bootloader
+  } if (leader_sequence_five_keys(KC_F, KC_L, KC_A, KC_S, KC_H)) {
+    reset_keyboard();
+    // WIPE = clear EEPROM
+  } if (leader_sequence_four_keys(KC_W, KC_I, KC_P, KC_E)) {
+    eeconfig_init();
     leader_end();
   }
+
 }
